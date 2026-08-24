@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="profile" href="http://gmpg.org/xfn/11">
+<title>Snowflower EPUB Validator Overview &#8211; YOSBITS</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel='dns-prefetch' href='http://fonts.googleapis.com/' />
+<link rel='dns-prefetch' href='http://www.yosbits.com/' />
+<link rel='stylesheet' id='wp-block-library-css' href='../css/wp-block-library.css' type='text/css' media='all' />
+<style id='classic-theme-styles-inline-css' type='text/css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css' type='text/css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='graphy-fonts-css' href='http://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CBitter%3A400&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='graphy-style-css' href='../css/silver.css' type='text/css' media='all' />
+<link rel="canonical" href="p5599.html" />
+<link rel='shortlink' href='p5599.html' />
+		<style type="text/css">
+			.site-logo { margin-top: px; padding-bottom: px; }
+			.entry-content a, .entry-summary a, .comment-content a, .comment-respond a, .navigation a, .comment-navigation a, .current-menu-item > a { color:; }
+			a:hover { color:; }
+		</style>
+	<link rel="stylesheet" href="../css/lightning.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="../css/page.css"/>
+</head>
+<body class="wp-singular page-template-default page page-id-5599 page-child parent-pageid-6105 wp-theme-graphy no-sidebar footer-0 has-avatars">
+<div id="page" class="hfeed">
+  <header id="masthead" class="site-header" role="banner">
+    <div class="main-navigation-wrapper">
+      <input type="checkbox" name="site" id="site" style="visibility: collapse; display:none">
+      <nav id="site-navigation" class="main-navigation" role="navigation">
+<!--        <h1 class="menu-toggle">YOSBITS</h1> -->
+        <div class="menu-toggle"><label for="site" id="site-label">YOSBITS</label></div>
+        <a class="skip-link screen-reader-text" href="p5599.html#content">コンテンツへスキップ</a>
+        <div class="menu-%e3%83%88%e3%83%83%e3%83%97%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container"><ul id="menu-%e3%83%88%e3%83%83%e3%83%97%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu"><li id="menu-item-4755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-4755"><a href="index.html">YOSBITS</a></li>
+<li id="menu-item-1053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1053"><a href="p987.html">アプリケーション</a></li>
+
+<li id="menu-item-4685" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-4685"><a href="p4682.html">技術</a></li>
+<li id="menu-item-7655" class="menu-item menu-item-type-post_type menu-item-object-page current-page-ancestor menu-item-7655"><a href="p6105.html">Application</a></li>
+<li id="menu-item-7659" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-7659"><a href="p7648.html">Technology</a></li>
+<li id="menu-item-37" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-37"><a href="p34.html">CONTACT</a></li>
+<li id="menu-item-8002" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-8002"><a href="p7987.html">CONTACT</a></li>
+</ul></div>              </nav><!-- #site-navigation -->
+    </div>
+      </header><!-- #masthead -->
+  <div id="content" class="site-content">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
+			
+				
+<article id="post-5599" class="post-5599 page type-page status-publish hentry">
+	<header class="entry-header">
+		<h1 class="entry-title">Snowflower EPUB Validator Overview</h1>
+	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<style>
+/*
+* "Merriweather" licensed under the SIL Open Font License
+*  http://www.google.com/fonts/specimen/Merriweather
+*/
+@font-face {
+    font-family: "Merriweather";
+    font-style: normal;
+    font-weight: 300;
+    src: local("Merriweather Light"), local("Merriweather-Light"), url("http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff") format("woff");
+}
+#content h1,
+#content h2, #content li{
+  font-family : "Merriweather";
+}
+#content th, #content td{
+  border-bottom: none;
+}
+article {
+    margin: auto;
+    max-width: 35em;
+}
+p{
+  text-align: justify;
+}
+#content h1{
+  font-size: 24pt;
+}
+.entry-title::before{
+  content: ' ';
+  background-image: url("../images/snowflower-epub-validator.png");
+  display: inline-block !important;
+  height: 38px;
+  width: 38px;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 0.5em;
+  transform: translateY(-3px);
+}
+</style>
+<link href="../css/asciidoctor.css" rel="stylesheet" type="text/css"/>
+<link href="../css/asciidoc-yos.css" rel="stylesheet" type="text/css"/>
+  <div class="row">
+   <div class="columns justify large-10 large-centered medium-12 small-12">
+    <div id="content"> 
+     <div id="preamble"> 
+      <div class="sectionbody"> 
+       <div class="paragraph"> 
+        <p>The Snowflower EPUB Validator can easily check the problem of EPUB format e-books.</p> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Even if you apply for registration of an e-book created by you to the store, even if you do not pass the review due to the problem of the EPUB file, or if the review goes through, the purchaser’s e-book reader may display problems. The Snowflower EPUB Validator automatically and quickly finds problems that are hard to find by visual inspection and reports it clearly. If you check the EPUB file for problems before registering to the store, It is possible to suppress the occurrence of problems.</p> 
+       </div> 
+       <div class="imageblock"> 
+        <div class="content"> 
+         <img decoding="async" src="data:image/svg+xml;base64,PCFET0NUWVBFIHN2ZyBQVUJMSUMgIi0vL1czQy8vRFREIFNWRyAxLjEvL0VOIiAiaHR0cDovL3d3dy53My5vcmcvR3JhcGhpY3MvU1ZHLzEuMS9EVEQvc3ZnMTEuZHRkIj48c3ZnIGhlaWdodD0iMzUxcHQiIHZpZXdCb3g9IjAuMDAgMC4wMCAzMTcuNjAgMzUwLjk1IiB3aWR0aD0iMzE4cHQiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiPjxnIGNsYXNzPSJncmFwaCIgaWQ9ImdyYXBoMCIgdHJhbnNmb3JtPSJzY2FsZSgxIDEpIHJvdGF0ZSgwKSB0cmFuc2xhdGUoNCAzNDYuOTUxKSI+PHRpdGxlPiUzPC90aXRsZT48ZyBjbGFzcz0ibm9kZSIgaWQ9Im5vZGUxIj48dGl0bGU+cm9vdDwvdGl0bGU+PGVsbGlwc2UgY3g9IjExOC44NjYiIGN5PSItMTcxLjQ3NiIgZmlsbD0iI2ZmZiIgcng9IjYwLjk2NDkiIHJ5PSI2MC45NjQ5IiBzdHJva2U9IiMzMzMiIHN0cm9rZS13aWR0aD0iMiIvPjx0ZXh0IGZpbGw9IiMwMDAiIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2Esc2Fucy1TZXJpZiIgZm9udC1zaXplPSIxNC4wMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMTE4Ljg2NiIgeT0iLTE3NS42NzYiPlNub3dmbG93ZXI8L3RleHQ+PHRleHQgZmlsbD0iIzAwMCIgZm9udC1mYW1pbHk9IkhlbHZldGljYSxzYW5zLVNlcmlmIiBmb250LXNpemU9IjE0LjAwIiB0ZXh0LWFuY2hvcj0ibWlkZGxlIiB4PSIxMTguODY2IiB5PSItMTU4Ljg3NiI+RVBVQiBWYWxpZGF0b3I8L3RleHQ+PC9nPjxnIGNsYXNzPSJub2RlIiBpZD0ibm9kZTIiPjx0aXRsZT5ub2RlMDwvdGl0bGU+PGVsbGlwc2UgY3g9IjI2Mi41OTgiIGN5PSItMTcxLjQ3NiIgZmlsbD0iIzQ1NzJhNyIgcng9IjQ3IiByeT0iNDciIHN0cm9rZT0iIzQ1NzJhNyIvPjx0ZXh0IGZpbGw9IiNmZmYiIGZvbnQtZmFtaWx5PSJIZWx2ZXRpY2Esc2Fucy1TZXJpZiIgZm9udC1zaXplPSIxNC4wMCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgeD0iMjYyLjU5OCIgeT0iLTE2Ny4yNzYiPkRyYWcmYW1wO0Ryb3A8L3RleHQ+PC9nPjxnIGNsYXNzPSJlZGdlIiBpZD0iZWRnZTEiPjx0aXRsZT5yb290LSZndDtub2RlMDwvdGl0bGU+PHBhdGggZD0iTTE4Ni44NTItMTcxLjQ3NkMxODguOTg3LTE3MS40NzYsMTkxLjEyNy0xNzEuNDc2LDE5My4yNjQtMTcxLjQ3NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMTkzLjI2NC0xNzEuNDc2QzE5My41MjMtMTcxLjQ3NiwxOTMuNzgyLTE3MS40NzYsMTk0LjA0MS0xNzEuNDc2IiBmaWxsPSJub25lIiBzdHJva2U9IiMwNjA5MGUiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0xOTQuMDQxLTE3MS40NzZDMTk0LjMtMTcxLjQ3NiwxOTQuNTU5LTE3MS40NzYsMTk0LjgxNy0xNzEuNDc2IiBmaWxsPSJub25lIiBzdHJva2U9IiMwYzEzMWMiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0xOTQuODE3LTE3MS40NzZDMTk1LjA3Ni0xNzEuNDc2LDE5NS4zMzUtMTcxLjQ3NiwxOTUuNTk0LTE3MS40NzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzExMWQyYSIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTE5NS41OTQtMTcxLjQ3NkMxOTUuODUyLTE3MS40NzYsMTk2LjExMS0xNzEuNDc2LDE5Ni4zNjktMTcxLjQ3NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMTcyNjM4IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMTk2LjM2OS0xNzEuNDc2QzE5Ni42MjgtMTcxLjQ3NiwxOTYuODg2LTE3MS40NzYsMTk3LjE0NC0xNzEuNDc2IiBmaWxsPSJub25lIiBzdHJva2U9IiMxZDMwNDYiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0xOTcuMTQ0LTE3MS40NzZDMTk3LjQwMy0xNzEuNDc2LDE5Ny42NjEtMTcxLjQ3NiwxOTcuOTE5LTE3MS40NzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIzMzk1NCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTE5Ny45MTktMTcxLjQ3NkMxOTguMTc3LTE3MS40NzYsMTk4LjQzNS0xNzEuNDc2LDE5OC42OTItMTcxLjQ3NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMjg0MzYxIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMTk4LjY5Mi0xNzEuNDc2QzE5OC45NS0xNzEuNDc2LDE5OS4yMDgtMTcxLjQ3NiwxOTkuNDY1LTE3MS40NzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzJlNGM2ZiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTE5OS40NjUtMTcxLjQ3NkMxOTkuNzIzLTE3MS40NzYsMTk5Ljk4LTE3MS40NzYsMjAwLjIzNy0xNzEuNDc2IiBmaWxsPSJub25lIiBzdHJva2U9IiMzNDU2N2QiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik0yMDAuMjM3LTE3MS40NzZDMjAwLjQ5NC0xNzEuNDc2LDIwMC43NTEtMTcxLjQ3NiwyMDEuMDA4LTE3MS40NzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzNhNWY4YiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTIwMS4wMDgtMTcxLjQ3NkMyMDEuMjY1LTE3MS40NzYsMjAxLjUyMS0xNzEuNDc2LDIwMS43NzgtMTcxLjQ3NiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjM2Y2OTk5IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNMjAxLjc3OC0xNzEuNDc2QzIwMy44OTMtMTcxLjQ3NiwyMDUuOTk2LTE3MS40NzYsMjA4LjA3Ny0xNzEuNDc2IiBmaWxsPSJub25lIiBzdHJva2U9IiM0NTcyYTciIHN0cm9rZS13aWR0aD0iMyIvPjxwb2x5Z29uIGZpbGw9IiMwMDAiIHBvaW50cz0iMTc5LjgyMSwtMTY5LjAyNiAxODYuODIxLC0xNzEuNDc2IDE3OS44MjEsLTE3My45MjYgMTc5LjgyMSwtMTY5LjAyNiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjMiLz48cG9seWdvbiBmaWxsPSIjNDU3MmE3IiBwb2ludHM9IjIxNS41MDQsLTE3My45MjYgMjA4LjUwNCwtMTcxLjQ3NiAyMTUuNTA0LC0xNjkuMDI2IDIxNS41MDQsLTE3My45MjYiIHN0cm9rZT0iIzQ1NzJhNyIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9nPjxnIGNsYXNzPSJub2RlIiBpZD0ibm9kZTMiPjx0aXRsZT5ub2RlMTwvdGl0bGU+PGVsbGlwc2UgY3g9IjQ3IiBjeT0iLTI5NS45NTEiIGZpbGw9IiNhYTQ2NDMiIHJ4PSI0NyIgcnk9IjQ3IiBzdHJva2U9IiNhYTQ2NDMiLz48dGV4dCBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLHNhbnMtU2VyaWYiIGZvbnQtc2l6ZT0iMTQuMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ3IiB5PSItMjkxLjc1MSI+UmVwb3J0PC90ZXh0PjwvZz48ZyBjbGFzcz0iZWRnZSIgaWQ9ImVkZ2UyIj48dGl0bGU+cm9vdC0mZ3Q7bm9kZTE8L3RpdGxlPjxwYXRoIGQ9Ik04NC43MzE5LTIzMC41OThDODMuNjc0NC0yMzIuNDI5LDgyLjYxNDgtMjM0LjI2NCw4MS41NTY5LTIzNi4wOTciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzAwMCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTgxLjU1NjktMjM2LjA5N0M4MS40Mjg2LTIzNi4zMTksODEuMzAwNC0yMzYuNTQxLDgxLjE3MjItMjM2Ljc2MyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGUwNjA2IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNODEuMTcyMi0yMzYuNzYzQzgxLjA0NC0yMzYuOTg1LDgwLjkxNTktMjM3LjIwNyw4MC43ODc4LTIzNy40MjkiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzFjMGMwYiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTgwLjc4NzgtMjM3LjQyOUM4MC42NTk3LTIzNy42NTEsODAuNTMxNi0yMzcuODczLDgwLjQwMzUtMjM4LjA5NSIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmIxMjExIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNODAuNDAzNS0yMzguMDk1QzgwLjI3NTUtMjM4LjMxNiw4MC4xNDc1LTIzOC41MzgsODAuMDE5Ni0yMzguNzYiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM5MTcxNiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTgwLjAxOTYtMjM4Ljc2Qzc5Ljg5MTYtMjM4Ljk4MSw3OS43NjM3LTIzOS4yMDMsNzkuNjM1OS0yMzkuNDI0IiBmaWxsPSJub25lIiBzdHJva2U9IiM0NzFkMWMiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik03OS42MzU5LTIzOS40MjRDNzkuNTA4LTIzOS42NDYsNzkuMzgwMi0yMzkuODY3LDc5LjI1MjUtMjQwLjA4OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNTUyMzIyIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNNzkuMjUyNS0yNDAuMDg4Qzc5LjEyNDgtMjQwLjMwOSw3OC45OTcxLTI0MC41Myw3OC44Njk1LTI0MC43NTEiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzYzMjkyNyIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTc4Ljg2OTUtMjQwLjc1MUM3OC43NDItMjQwLjk3Miw3OC42MTQ0LTI0MS4xOTMsNzguNDg3LTI0MS40MTQiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzcxMmYyZCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTc4LjQ4Ny0yNDEuNDE0Qzc4LjM1OTUtMjQxLjYzNSw3OC4yMzIyLTI0MS44NTUsNzguMTA0OS0yNDIuMDc2IiBmaWxsPSJub25lIiBzdHJva2U9IiM4MDM1MzIiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik03OC4xMDQ5LTI0Mi4wNzZDNzcuOTc3Ni0yNDIuMjk2LDc3Ljg1MDQtMjQyLjUxNyw3Ny43MjMzLTI0Mi43MzciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzhlM2EzOCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTc3LjcyMzMtMjQyLjczN0M3Ny41OTYyLTI0Mi45NTcsNzcuNDY5MS0yNDMuMTc3LDc3LjM0MjItMjQzLjM5NyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjOWM0MDNkIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNNzcuMzQyMi0yNDMuMzk3Qzc2LjI5NS0yNDUuMjExLDc1LjI1NDMtMjQ3LjAxMyw3NC4yMjM4LTI0OC43OTgiIGZpbGw9Im5vbmUiIHN0cm9rZT0iI2FhNDY0MyIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBvbHlnb24gZmlsbD0iIzAwMCIgcG9pbnRzPSI5MC41MTAxLC0yMjUuNDg5IDg0Ljg4ODMsLTIzMC4zMjcgODYuMjY2NiwtMjIzLjAzOSA5MC41MTAxLC0yMjUuNDg5IiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMyIvPjxwb2x5Z29uIGZpbGw9IiNhYTQ2NDMiIHBvaW50cz0iNjguNDI1NCwtMjUzLjk0MSA3NC4wNDcyLC0yNDkuMTA0IDcyLjY2ODksLTI1Ni4zOTEgNjguNDI1NCwtMjUzLjk0MSIgc3Ryb2tlPSIjYWE0NjQzIiBzdHJva2Utd2lkdGg9IjMiLz48L2c+PGcgY2xhc3M9Im5vZGUiIGlkPSJub2RlNCI+PHRpdGxlPm5vZGUyPC90aXRsZT48ZWxsaXBzZSBjeD0iNDciIGN5PSItNDciIGZpbGw9IiM4OWE1NGUiIHJ4PSI0NyIgcnk9IjQ3IiBzdHJva2U9IiM4OWE1NGUiLz48dGV4dCBmaWxsPSIjZmZmIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLHNhbnMtU2VyaWYiIGZvbnQtc2l6ZT0iMTQuMDAiIHRleHQtYW5jaG9yPSJtaWRkbGUiIHg9IjQ3IiB5PSItNDIuOCI+UXVpY2sgVmlldzwvdGV4dD48L2c+PGcgY2xhc3M9ImVkZ2UiIGlkPSJlZGdlMyI+PHRpdGxlPnJvb3QtJmd0O25vZGUyPC90aXRsZT48cGF0aCBkPSJNODQuNzMxOS0xMTIuMzU0QzgzLjY3NDQtMTEwLjUyMiw4Mi42MTQ4LTEwOC42ODcsODEuNTU2OS0xMDYuODU0IiBmaWxsPSJub25lIiBzdHJva2U9IiMwMDAiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik04MS41NTY5LTEwNi44NTRDODEuNDI4Ni0xMDYuNjMyLDgxLjMwMDQtMTA2LjQxLDgxLjE3MjItMTA2LjE4OCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMGIwZTA2IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNODEuMTcyMi0xMDYuMTg4QzgxLjA0NC0xMDUuOTY2LDgwLjkxNTktMTA1Ljc0NCw4MC43ODc4LTEwNS41MjIiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzE3MWMwZCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTgwLjc4NzgtMTA1LjUyMkM4MC42NTk3LTEwNS4zLDgwLjUzMTYtMTA1LjA3OCw4MC40MDM1LTEwNC44NTciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzIyMjkxNCIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTgwLjQwMzUtMTA0Ljg1N0M4MC4yNzU1LTEwNC42MzUsODAuMTQ3NS0xMDQuNDEzLDgwLjAxOTYtMTA0LjE5MiIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjMmUzNzFhIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNODAuMDE5Ni0xMDQuMTkyQzc5Ljg5MTYtMTAzLjk3LDc5Ljc2MzctMTAzLjc0OCw3OS42MzU5LTEwMy41MjciIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzM5NDUyMSIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTc5LjYzNTktMTAzLjUyN0M3OS41MDgtMTAzLjMwNiw3OS4zODAyLTEwMy4wODQsNzkuMjUyNS0xMDIuODYzIiBmaWxsPSJub25lIiBzdHJva2U9IiM0NTUzMjciIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik03OS4yNTI1LTEwMi44NjNDNzkuMTI0OC0xMDIuNjQyLDc4Ljk5NzEtMTAyLjQyMSw3OC44Njk1LTEwMi4yIiBmaWxsPSJub25lIiBzdHJva2U9IiM1MDYwMmUiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik03OC44Njk1LTEwMi4yQzc4Ljc0Mi0xMDEuOTc5LDc4LjYxNDQtMTAxLjc1OCw3OC40ODctMTAxLjUzNyIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNWI2ZTM0IiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNNzguNDg3LTEwMS41MzdDNzguMzU5NS0xMDEuMzE2LDc4LjIzMjItMTAxLjA5Niw3OC4xMDQ5LTEwMC44NzUiIGZpbGw9Im5vbmUiIHN0cm9rZT0iIzY3N2MzYiIgc3Ryb2tlLXdpZHRoPSIzIi8+PHBhdGggZD0iTTc4LjEwNDktMTAwLjg3NUM3Ny45Nzc2LTEwMC42NTUsNzcuODUwNC0xMDAuNDM0LDc3LjcyMzMtMTAwLjIxNCIgZmlsbD0ibm9uZSIgc3Ryb2tlPSIjNzI4YTQxIiBzdHJva2Utd2lkdGg9IjMiLz48cGF0aCBkPSJNNzcuNzIzMy0xMDAuMjE0Qzc3LjU5NjItOTkuOTk0MSw3Ny40NjkxLTk5Ljc3NDEsNzcuMzQyMi05OS41NTQyIiBmaWxsPSJub25lIiBzdHJva2U9IiM3ZTk3NDgiIHN0cm9rZS13aWR0aD0iMyIvPjxwYXRoIGQ9Ik03Ny4zNDIyLTk5LjU1NDJDNzYuMjk1LTk3Ljc0MDUsNzUuMjU0My05NS45Mzc5LDc0LjIyMzgtOTQuMTUzIiBmaWxsPSJub25lIiBzdHJva2U9IiM4OWE1NGUiIHN0cm9rZS13aWR0aD0iMyIvPjxwb2x5Z29uIGZpbGw9IiMwMDAiIHBvaW50cz0iODYuMjY2NiwtMTE5LjkxMiA4NC44ODgzLC0xMTIuNjI1IDkwLjUxMDEsLTExNy40NjIgODYuMjY2NiwtMTE5LjkxMiIgc3Ryb2tlPSIjMDAwIiBzdHJva2Utd2lkdGg9IjMiLz48cG9seWdvbiBmaWxsPSIjODlhNTRlIiBwb2ludHM9IjcyLjY2ODksLTg2LjU1OTkgNzQuMDQ3MiwtOTMuODQ3MSA2OC40MjU0LC04OS4wMDk5IDcyLjY2ODksLTg2LjU1OTkiIHN0cm9rZT0iIzg5YTU0ZSIgc3Ryb2tlLXdpZHRoPSIzIi8+PC9nPjwvZz48L3N2Zz4=" alt=""> 
+        </div> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="sect1"> 
+      <h2 id="_features">Features</h2> 
+      <div class="sectionbody"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>Supports specification of EPUB 2 &amp; 3</p> </li> 
+         <li> <p>Easy operation of drag &amp; drop of EPUB file is possible</p> </li> 
+         <li> <p>EPUB problems are reported at three severity levels: fatal, error, and warning.</p> </li> 
+         <li> <p>Work offline without uploading EPUB files to external server.</p> </li> 
+         <li> <p>IDPF EpubCheck 5.1.0 built-in</p> 
+          <div class="dlist"> 
+           <dl> 
+            <dt class="hdlist1">
+              EpubCheck 
+            </dt> 
+            <dd> 
+             <p>&#8220;EpubCheck&#8221; is developed by IDPF(The International Digital Publishing Forum) It is a command line tool for checking EPUB files.</p> 
+            </dd> 
+           </dl> 
+          </div> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="sect1"> 
+      <h2 id="_validity_check_specification">Validity check specification</h2> 
+      <div class="sectionbody"> 
+       <div class="paragraph"> 
+        <p>The Snowflower EPUB Validator supports validation against the following EPUB specifications:</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>EPUB 3.3</p> </li> 
+         <li> <p>EPUB Dictionaries and Glossaries 1.0</p> </li> 
+         <li> <p>EPUB Indexes 1.0</p> </li> 
+         <li> <p>EPUB Multiple-Rendition Publications 1.0</p> </li> 
+         <li> <p>EPUB Previews 1.0</p> </li> 
+         <li> <p>EPUB Region-Based Navigation 1.0</p> </li> 
+        </ul> 
+       </div> 
+       <div class="paragraph"> 
+        <p>It also provides an early implementation of checks for the following draft specifications:</p> 
+       </div> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p>EPUB 3 EDUPUB Profile</p> </li> 
+         <li> <p>EPUB Distributable Objects 1.0</p> </li> 
+         <li> <p>EPUB Scriptable Components Packaging and Integration 1.0</p> </li> 
+        </ul> 
+       </div> 
+       <div class="paragraph"> 
+        <p>Validation profiles are set automatically according to <code>dc:type</code> metadata. It is not necessary to explicitly specify it.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="sect1"> 
+      <h2 id="_notes">Notes</h2> 
+      <div class="sectionbody"> 
+       <div class="paragraph"> 
+        <p>The Snowflower EPUB Validator strictly checks EPUB specifications. Therefore, a major EPUB leader may also detect potential problems with compatibility that will not cause problems.</p> 
+       </div> 
+      </div> 
+     </div> 
+     <div class="sect1"> 
+      <h2 id="_reference">Reference</h2> 
+      <div class="sectionbody"> 
+       <div class="ulist"> 
+        <ul> 
+         <li> <p><a href="https://github.com/IDPF/epubcheck">EpubCheck &#8211; github.com/IDPF</a></p> </li> 
+        </ul> 
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div>
+  </div>
+    <div style="text-align:center;padding-top:2em"> 
+<a href="https://apps.apple.com/us/app/snowflower-epub-validator/id1273603904?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img decoding="async" src="../images/appstore_en.svg" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;margin-top:0"></a>
+    </div>			</div><!-- .entry-content -->
+</article><!-- #post-## -->
+
+				
+			
+		</main><!-- #main -->
+	</div><!-- #primary -->
+
+  </div><!-- #content -->
+  <footer id="colophon" class="site-footer" role="contentinfo">
+      <ul id="social">
+      <li><a target="_blank" rel="noopener" title="X" href="https://x.com/yosbits"><i class="fa fa-twitter"></i></a></li>
+      <li><a target="_blank" rel="noopener" title="Flickr" href="https://www.flickr.com/photos/31417221@N08/albums/with/72157705433744491"><i class="fa fa-flickr"></i></a></li>
+      <li><a target="_blank" rel="noopener" title="GitHub" href="https://github.com/yososs"><i class="fa fa-github"></i></a></li>
+    </ul>
+    <div class="site-info">
+      <div class="site-meta-info"><a href="p196.html">Terms of Service</a></div>
+      <div class="site-meta-info"><a href="p6482.html">Privacy Policy</a></div>
+      <div class="site-copyright"><i class="fa fa-copyright"></i> 2026 YOSBITS All Rights Reserved.</div>
+    </div><!-- .site-info -->
+  </footer><!-- #colophon -->
+</div><!-- #page -->
+</body>
+</html>

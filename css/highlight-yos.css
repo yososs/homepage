@@ -1,0 +1,159 @@
+@charset "utf-8";
+
+/*! 
+ * highlight-yos.css
+ * 2015 Naohiro Yoshimoto
+ * Licensed under the MIT license.
+ */
+.highlight {
+  background-color: #FFF;
+  border: 1px solid #CCC;
+  font-family: Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;
+  color: #000;
+  padding: 1em 0px 1em 1em;
+}
+
+
+.highlight pre {
+  margin: 0px;
+}
+
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  color: #333;
+  background: #f8f8f8;
+}
+
+.hljs-comment,
+.hljs-quote {
+  color: #998;
+  font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-subst {
+  color:#7F0055;
+  font-weight: bold;
+}
+
+.hljs-number,
+.hljs-literal,
+.hljs-variable,
+.hljs-template-variable {
+  color: #008080;
+}
+
+
+.tex .hljs-command{
+	 color: #008;
+}
+
+.hljs-string,
+.hljs-doctag {
+  color: #2A00FF;
+}
+
+.hljs-section,
+.hljs-selector-id {
+  color: #900;
+  font-weight: bold;
+}
+
+.hljs-subst {
+  font-weight: normal;
+}
+
+.hljs-type{
+  color: #458;
+  font-weight: bold;
+}
+
+.hljs-name,
+.hljs-attribute {
+  color: #000080;
+  font-weight: normal;
+}
+
+.hljs-tag,
+.hljs-tag .hljs-name{
+  color: #3f7f7f;
+}
+.hljs-tag .hljs-attr {
+  color: #7f007f;
+}
+.hljs-tag .hljs-string {
+	color: #3f5fbf;
+	font-style: italic;
+}
+
+.hljs-regexp,
+.hljs-link {
+  color: #009926;
+}
+
+.hljs-symbol,
+.hljs-bullet {
+  color: #990073;
+}
+
+.hljs-built_in,
+.hljs-builtin-name {
+  color: #0086b3;
+}
+
+.hljs-meta {
+  color: #999;
+  font-weight: bold;
+}
+
+.hljs-deletion {
+  background: #fdd;
+}
+
+.hljs-addition {
+  background: #dfd;
+}
+
+.hljs-emphasis {
+  font-style: italic;
+}
+
+.hljs-strong {
+  font-weight: bold;
+
+}
+
+.css .hljs-string {
+  font-style: italic;
+}
+
+.css .hljs-selector-tag {
+  color: #3f7f7f;
+}
+
+.css .hljs-selector-id,
+.css .hljs-selector-class {
+  color: #3f7f7f;
+  font-style: italic;
+  font-weight: normal;
+}
+
+.css .hljs-attribute{
+  color: #7f007f;
+}
+
+.css .hljs-number {
+  color: #2a00e1;
+  font-style: italic;
+}
+
+.xml .hljs-comment,
+.html .hljs-comment,
+.xhtml .hljs-comment,
+.css .hljs-comment {
+  color: #3f5fbf;
+  font-style: normal;
+}

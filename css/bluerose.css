@@ -1,0 +1,18 @@
+.entry-content table, .comment-content table {
+       border-top: solid 1px #ddd;
+}
+.entry-content th, .comment-content th,
+.entry-content td, .comment-content td {
+	border-bottom: solid 1px #ddd;
+}
+@media screen{
+	#content th {
+		border-bottom: 1px solid #6678B1;
+		color: #003399;
+		font-weight: normal;
+	}
+	#content td {
+		border-bottom: 1px solid #6678B1;
+		color: #666699;
+	}
+}

@@ -1,0 +1,396 @@
+@charset "utf-8";
+
+/*! 
+ * markdown-yos.css
+ * 2018 (C) Naohiro Yoshimoto
+ * Licensed under the MIT license.
+ */
+
+body {
+	font-family: Helvetica,Arial,Freesans,clean,sans-serif;
+	padding: 1em;
+	margin: auto;
+	max-width: 55em;
+	background: #fefefe;
+	color: #333333;
+}
+body:lang(en) {
+	font-family: Helvetica,Arial,"Lucida Grande",Verdana,sans-serif;
+}
+body:lang(ja) {
+	font-family: Helvetica,Arial,"Lucida Grande",YuGothic,"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Verdana,sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: bold;
+}
+
+h1, h2 {
+    letter-spacing: -0.01em;
+}
+
+h1, h2, h3{
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+	word-spacing: -0.05em;
+}
+h1 {
+	color: #000000;
+    font-size: 2.75em;
+}
+
+h2 {
+	border-bottom: 1px solid #CCCCCC;
+	color: #000000;
+    font-size: 2.3125em;
+}
+
+h3 {
+	font-size: 1.6875em;
+}
+
+h4, h5 {
+    font-size: 1.125em;
+}
+
+h6 {
+    font-size: 1em;
+	color: #777777;
+	background-color: inherit;
+}
+
+hr {
+	height: 0.2em;
+	border: 0;
+	color: #CCCCCC;
+	background-color: #CCCCCC;
+}
+
+p, blockquote, ul, ol, dl, li, table, pre {
+	margin: 15px 0;
+}
+
+p{
+	text-align: justify;
+	text-justify: inter-ideograph;
+	line-height : 1.6;
+	font-weight : 400;
+	text-rendering: optimizelegibility;
+}
+
+code, pre {
+	border-radius: 3px;
+	background-color: #F8F8F8;
+	color: inherit;
+}
+
+code {
+	border: 1px solid #EAEAEA;
+	margin: 0 2px;
+	padding: 0 5px;
+	font-family: Consolas,"Liberation Mono",Menlo,Courier,monospace;
+}
+
+pre {
+	border: 1px solid #CCCCCC;
+	line-height: 1.25em;
+	overflow: auto;
+	padding: 6px 10px;
+}
+
+pre>code {
+	border: 0;
+	margin: 0;
+	padding: 0;
+}
+
+a, a:visited {
+	color: #4183C4;
+	background-color: inherit;
+	text-decoration: none;
+}
+
+blockquote {
+	color: #777;
+	padding: 0 1em;
+	border-left: 0.25em #ddd solid;
+}
+
+table {
+	font-size: 14px;
+	border-collapse: collapse;
+	margin: 20px 0;
+	padding: 0;
+}
+
+table tr {
+	border-top: 1px solid #ccc;
+	background-color: #fff;
+	margin: 0;
+	padding: 0;
+}
+
+table tr:nth-child(2n) {
+	background-color: #f8f8f8;
+}
+
+table tr th[align="center"], table tr td[align="center"] {
+	text-align: center;
+}
+
+table tr th, table tr td {
+	border: 1px solid #ccc;
+	margin: 0;
+	padding: 6px 13px;
+}
+
+img {
+	max-width:100%;
+}
+
+ul, ol, dl {
+    font-family: inherit;
+    font-size: 1em;
+    line-height: 1.6;
+    list-style-position: outside;
+}
+
+ul, ol {
+    margint: 0;
+    margin-left: 1.5em;
+    padding: 0;
+}
+
+[dir="rtl"] ul, ol{
+    margin-right: 1.5em;
+}
+
+ol, ul, li{
+	margin-bottom: 0.625em; margin-top: 0px;
+}
+
+ul li.task-list-item{
+    list-style-type: none;
+}
+
+@media print {
+	body{
+		background: white;
+		padding: 0;
+		max-width: 100%;
+	}
+}
+
+/* snow flower text - theme begin*/
+
+/* -- common layout rule */
+pre>code{page-break-inside: avoid; hyphens: none;}
+h1,h2,h3,h4,h5,h6,dt{page-break-after: avoid;page-break-inside:avoid;hyphens: manual;}
+
+/* -- common rendering rule */
+body{-webkit-font-smoothing: antialiased;}
+h1,h2,h3,h4,h5,h6{text-rendering:optimizeLegibility}
+
+/*  --  font */
+h1,h2,h3,h4,h5,h6{font-weight:300;font-style:normal}
+h1,h2{letter-spacing:-.01em}
+h1{font-size:2.125em}
+h2{font-size:1.6875em}
+h3{font-size:1.375em}
+h4,h5{font-size:1.125em}
+h6{font-size:1em}
+pre>code{font-size:.9em;}
+p{letter-spacing:-.01em;}
+
+/* -- blue color theme */
+h1{color:rgba(0,0,0,.85)}
+h2,h3,h4,h5,h6,a[href]{color:#005A9C}
+
+/* -- space rule */
+h1{margin:.67em 0}
+h2,h3,h4,h5,h6{margin-top: 3rem}
+p{margin:1em 0;}
+dd > p:first-child, li > p:first-child {margin-top: 0;}
+
+@media only screen and (min-width:768px) {
+    h1, h2, h3, h4, h5, h6 {line-height: 1.2}
+    h1 {font-size: 2.75em}
+    h2 {font-size: 2.3125em}
+    h3 {font-size: 1.6875em}
+    h4 {font-size: 1.4375em}
+}
+
+/* theme end */
+
+
+.adm-block {
+    display: block;
+    width: 99%;
+    border-radius: 6px;
+    padding-left: 10px;
+    margin-bottom: 1em;
+    border: 1px solid;
+    border-left-width: 2px;
+}
+.adm-heading {
+    display: block;
+    font-weight: bold;
+    font-size: 0.9em;
+    padding: 0.2em;
+    border-bottom: solid 1px;
+    padding-left: 10px;
+    margin-left: -10px;
+}
+.adm-body {
+    display: block;
+    margin-left: 1.5em;
+    margin-right: 1.5em;
+}
+.adm-heading > span {
+    color: initial;
+}
+.adm-block {
+    border-color: #ebebeb;
+    border-bottom-color: #bfbfbf;
+    page-break-inside:avoid;
+}
+
+.adm-block.adm-abstract{
+    border-left-color: #48C4FF;
+}
+.adm-block.adm-abstract .adm-heading {
+    background: #E8F7FF;
+    border-bottom-color: #dbf3ff;
+}
+.adm-block.adm-abstract .adm-heading > .fa {
+    color: #48C4FF;
+}
+
+.adm-block.adm-bug {
+    border-left-color: #F50057;
+}
+.adm-block.adm-bug .adm-heading {
+    background: #FEE7EE;
+    border-bottom-color: #fcd9e4;
+}
+.adm-block.adm-bug .adm-heading > .fa{
+    color: #F50057;
+}
+
+.adm-block.adm-danger{
+    border-left-color: #FE1744;
+}
+.adm-block.adm-danger .adm-heading {
+    background: #FFE9ED;
+    border-bottom-color: #ffd9e0;
+}
+.adm-block.adm-danger .adm-heading > .fa {
+    color: #FE1744;
+}
+
+.adm-block.adm-example{
+    border-left-color: #7940ff;
+}
+.adm-block.adm-example .adm-heading {
+    background: #EFEBFF;
+    border-bottom-color: #e0d9ff;
+}
+.adm-block.adm-example .adm-heading > .fa {
+	color:	#7940ff;
+}
+
+.adm-block.adm-fail {
+    border-left-color: #FE5E5E;
+}
+.adm-block.adm-fail .adm-heading {
+    background: #FFEEEE;
+    border-bottom-color: #ffe3e3;
+}
+.adm-block.adm-fail .adm-heading > .fa{
+    color: #Fe5e5e;
+}
+
+.adm-block.adm-faq {
+    border-left-color: #5ED116;
+}
+.adm-block.adm-faq .adm-heading {
+    background: #EEFAE8;
+    border-bottom-color: #e6fadc;
+}
+.adm-block.adm-faq .adm-heading > .fa{
+    color: #5ED116;
+}
+
+.adm-block.adm-info {
+    border-left-color: #00B8D4;
+}
+.adm-block.adm-info .adm-heading {
+    background: #E8F7FA;
+    border-bottom-color: #dcf5fa;
+}
+.adm-block.adm-info .adm-heading  > .fa{
+    color: #00B8D4;
+}
+
+.adm-block.adm-note {
+    border-left-color: #448AFF;
+}
+.adm-block.adm-note .adm-heading {
+    background: #EDF4FF;
+    border-bottom-color: #e0edff;
+}
+.adm-block.adm-note .adm-heading > .fa{
+    color: #448AFF;
+}
+
+.adm-block.adm-quote{
+    border-left-color: #9E9E9E;
+}
+.adm-block.adm-quote .adm-heading {
+    background: #F4F4F4;
+    border-bottom-color: #e8e8e8;
+}
+.adm-block.adm-quote .adm-heading > .fa{
+    color: #9E9E9E;
+}
+
+.adm-block.adm-success{
+    border-left-color: #1DCD63;
+}
+.adm-block.adm-success .adm-heading {
+    background: #E9F8EE;
+    border-bottom-color: #dcf7e5;
+}
+.adm-block.adm-success .adm-heading > .fa {
+	color: #1DCD63;
+}
+
+.adm-block.adm-tip{
+    border-left-color: #01BFA5;
+}
+.adm-block.adm-tip .adm-heading {
+    background: #E9F9F6;
+    border-bottom-color: #dcf7f2;
+}
+.adm-block.adm-tip .adm-heading > .fa {
+	color: #01BFA5;
+}
+
+.adm-block.adm-warning{
+    border-left-color: #FF9001;
+}
+.adm-block.adm-warning .adm-heading {
+    background: #FEF3E8;
+    border-bottom-color: #Fef3e8;
+}
+.adm-block.adm-warning .adm-heading > .fa {
+	color: #FF9001;
+}
+
+.adm-heading > .fa{
+	width: 1.6em;
+	display: inline-block;
+	text-align: center;
+	margin-left: -0.25em;
+	font-size: 1.1em;
+}

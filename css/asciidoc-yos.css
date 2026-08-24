@@ -1,0 +1,93 @@
+@charset "utf-8";
+
+/*! 
+ * asciidoc-yos.css
+ * 2015-2020 Naohiro Yoshimoto
+ * Licensed under the MIT license.
+ */
+ 
+body:lang(en) {
+	font-family: Helvetica,Arial,"Lucida Grande",Verdana,sans-serif;
+}
+body:lang(ja) {
+	font-family: Helvetica,Arial,"Lucida Grande",YuGothic,"Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Verdana,sans-serif;
+}
+.imageblock>.title {
+	text-align: center;
+}
+.imageblock {
+	text-align: center;
+}
+.conum[data-value] {
+	display: inline-block;
+	color: #fff !important;
+	background-color: rgba(0, 0, 0, .8);
+	-webkit-border-radius: 100px;
+	border-radius: 100px;
+	text-align: center;
+	font-size: .75em;
+	width: 1.67em;
+	height: 1.67em;
+	line-height: 1.67em;
+	font-family: "Open Sans", "DejaVu Sans", sans-serif;
+	font-style: normal;
+	font-weight: bold;
+}
+kbd{padding:0 .5em}
+
+@media print{
+	@page {
+	    /* `size: auto` (the inital) is A4 portrait */
+	    margin: 75px;
+	    @top-left-corner     { text-align: right;  vertical-align:  middle }
+	    @top-left            { text-align: left;   vertical-align:  middle }
+	    @top-center          { text-align: center; vertical-align:  middle }
+	    @top-right           { text-align: right;  vertical-align:  middle }
+	    @top-right-corner    { text-align: left;   vertical-align:  middle }
+	    @left-top            { text-align: center; vertical-align:  top    }
+	    @left-middle         { text-align: center; vertical-align:  middle }
+	    @left-bottom         { text-align: center; vertical-align:  bottom }
+	    @right-top           { text-align: center; vertical-align:  top    }
+	    @right-middle        { text-align: center; vertical-align:  middle }
+	    @right-bottom        { text-align: center; vertical-align:  bottom }
+	    @bottom-left-corner  { text-align: right;  vertical-align:  middle }
+	    @bottom-left         { text-align: left;   vertical-align:  middle }
+	    @bottom-center       { text-align: center; vertical-align:  middle }
+	    @bottom-right        { text-align: right;  vertical-align:  middle }
+	    @bottom-right-corner { text-align: left;   vertical-align:  middle }
+	}
+	h1 { page-break-after: avoid; page-break-inside: avoid; }
+	h2 { page-break-after: avoid; page-break-inside: avoid; }
+	h3 { page-break-after: avoid; page-break-inside: avoid; }
+	h4 { page-break-after: avoid; page-break-inside: avoid; }
+	h5 { page-break-after: avoid; }
+	h6 { page-break-after: avoid; }
+	ol { page-break-before: avoid; }
+	ul { page-break-before: avoid; }
+	img,svg,tr {page-break-inside: avoid;}
+	h1+p, h2+p, h3+p { page-break-before: avoid; }
+	table, figure {page-break-inside: avoid; }
+	img, svg{max-width:100% !important; break-inside: avoid-page !important;}
+	
+	.imageblock{page-break-inside: avoid; page-break-before:auto; page-break-after:auto; break-inside: avoid-page;}
+	.listingblock > .title{page-break-after: avoid;}
+	.imageblock > .title{page-break-before: avoid;}
+	.paragraph, .ulist{overflow: hidden !important}
+	
+	.row{max-width:100%}
+	body > .row > .columns{width:100%}
+	.column, .columns {padding-left:0; padding-right:0;}
+	#content {padding-left:0; padding-right:0;}
+	
+	.listingblock code[data-lang]::before {opacity: 1; color:#999;}
+	
+	.listingblock>.content>pre {-webkit-border-radius:1px;}	
+	
+	html, body{font-size:8pt}
+	#preamble>.sectionbody>[class="paragraph"]:first-of-type p{font-size:100%}
+	
+	table.frame-all {border-width: thin;}
+	table.grid-all>thead>tr>.tableblock,
+	table.grid-all>tbody>tr>.tableblock{border-width: 0 thin thin 0;}
+	.highlight{border-width: thin !important}
+}

@@ -1,0 +1,479 @@
+html {
+  font-size: 100%;
+}
+.comment-content td,
+.comment-content th,
+.entry-content td,
+.entry-content th,
+.main-navigation-wrapper {
+  border-bottom: none;
+}
+@media screen and (max-width:779px) {
+  .menu-toggle {
+    border-top: none;
+  }
+}
+.header-image {
+  margin: 0;
+}
+.comment-content a,
+.comment-navigation a,
+.comment-respond a,
+.current-menu-item>a,
+.entry-summary a,
+.navigation a {
+  color: #999;
+}
+html:lang(en),
+html:lang(en) article {
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+html:lang(ja) {
+  font-family: "ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ Ｐゴシック",sans-serif;
+}
+html:lang(en) #menu-item-1053,
+html:lang(en) #menu-item-22,
+html:lang(en) #menu-item-37,
+html:lang(en) #menu-item-4685,
+html:lang(ja) #menu-item-7655,
+html:lang(ja) #menu-item-7659,
+html:lang(ja) #menu-item-8002 {
+  display: none;
+}
+html:lang(en) #site-navigation a {
+  font-family: "Open Sans",sans-serif;
+  font-weight: 300;
+}
+html:lang(ja) #site-navigation a {
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ",sans-serif;
+  font-weight: 300;
+}
+@media screen and (min-width:780px) {
+  .main-navigation li a {
+    padding: 0 1.5em;
+  }
+}
+body {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+#site-navigation .menu-item a {
+  text-transform: uppercase;
+}
+#page {
+  background-color: #f3f4f5;
+}
+#masthead {
+  background-color: #fff;
+}
+.site-branding {
+  padding: 21px 0 17px;
+}
+.site-title a {
+  color: #666;
+}
+.site-copyright .fa,
+.site-footer .site-info,
+.site-meta-info a {
+  color: #fff;
+}
+.site-meta-info {
+  padding-bottom: 10px;
+}
+.site-footer {
+  background-color: #666;
+  padding: 40px 0;
+}
+.site-footer a:hover {
+  filter: alpha(opacity=65);
+  opacity: .65;
+}
+#social {
+  margin-bottom: 30px;
+  margin-left: 0;
+  text-align: center;
+}
+#social li {
+  display: inline-block;
+  margin-right: 5px;
+}
+#social .fa {
+  color: #fff;
+  font-size: 32px;
+  padding: 0 .5em;
+}
+.menu-item {
+  font-weight: 700;
+}
+.comment-content h1,
+.comment-content h2,
+.comment-content h3,
+.comment-content h4,
+.comment-content h5,
+.comment-content h6,
+.entry-content h1,
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6 {
+  margin: 1.714285714rem 0;
+}
+.comment-content h1,
+.entry-content h1 {
+  font-size: 1.5rem;
+  line-height: 1.5;
+}
+.comment-content h2,
+.entry-content h2,
+.mu_register h2 {
+  font-size: 1.285714286rem;
+  line-height: 1.6;
+}
+.comment-content h3,
+.entry-content h3 {
+  font-size: 1.142857143rem;
+  line-height: 1.846153846;
+}
+.comment-content h4,
+.entry-content h4 {
+  font-size: 1rem;
+  line-height: 1.846153846;
+}
+.comment-content h5,
+.entry-content h5 {
+  font-size: .928571429rem;
+  line-height: 1.846153846;
+}
+.comment-content h6,
+.entry-content h6 {
+  font-size: .857142857rem;
+  line-height: 1.846153846;
+}
+.entry-content dt,
+.entry-content p {
+  margin-bottom: 1.71429rem;
+}
+.entry-content a,
+.post-navigation a {
+  color: #08c !important;
+  text-decoration: none;
+}
+.entry-content a:hover,
+.post-navigation a:hover {
+  color: #005580 !important;
+  text-decoration: underline;
+}
+@media screen {
+  .entry-content a[href^="http://"]::after,
+  .entry-content a[href^="https://"]::after {
+    color: silver;
+    content: "";
+    display: inline-block;
+    font-family: "fontawesome";
+    padding-left: .5em;
+  }
+  .entry-content a[href^="http://"]:empty::after,
+  .entry-content a[href^="https://"]:empty::after,
+  .entry-content a[href^="https://apps.apple.com/"]::after {
+    content: none;
+  }
+  #content img {
+    border-radius: none;
+    box-shadow: none;
+  }
+}
+@media screen and (min-width:600px) {
+  .entry-header .entry-title {
+    font-size: 38px;
+    font-weight: 200;
+    line-height: 64px;
+  }
+}
+@media screen and (max-width:640px) {
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+@media screen and (min-width:960px) {
+  .footer-widget,
+  .site-branding,
+  .site-content,
+  .site-info {
+    margin: 0 auto;
+    max-width: 880px;
+  }
+  li {
+    color: #777;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.8;
+    text-align: justify;
+  }
+  .feature li {
+    font-weight: 700;
+  }
+  #content {
+    color: #333;
+  }
+  html:lang(ja) #content {
+    font: 16px"Lucida Grande","Lucida Sans Unicode","Hiragino Kaku Gothic Pro","ヒラギノ角ゴ Pro W3","メイリオ",Meiryo,"ＭＳ Ｐゴシック",Helvetica,Arial,Verdana,sans-serif;
+  }
+  .slogan li {
+    font-weight: 700;
+    text-align: justify;
+    text-justify: inter-ideograph;
+  }
+  .entry-header .entry-title {
+    font-size: 38px;
+    font-weight: 200;
+    line-height: 64px;
+  }
+  .comment-content h2,
+  .entry-content h2,
+  .mu_register h2 {
+    font-size: 26px;
+    font-weight: 200;
+    line-height: 36px;
+  }
+  .comment-content p,
+  .entry-content p,
+  .entry-summary p,
+  .mu_register p {
+    line-height: 32px;
+  }
+  #content em,
+  cite,
+  i {
+    color: #777;
+    font-size: 1em;
+    font-style: italic;
+  }
+  #content .rosetable table {
+    border-collapse: inherit;
+    font-size: 14px;
+  }
+  #content .rosetable td,
+  #content .rosetable th {
+    border-bottom: 2px solid #6678b1;
+    border-left: 30px solid #fff;
+    border-right: 30px solid #fff;
+  }
+  #content .rosetable th {
+    color: #039;
+    font-size: 14px;
+    font-weight: 400;
+    padding: 8px 2px;
+  }
+  #content .rosetable td {
+    color: #669;
+    padding: 8px 2px 0;
+  }
+  #content hr {
+    background: #333;
+    background-image: -webkit-linear-gradient(left,#ccc,#333,#ccc);
+    background-image: -moz-linear-gradient(left,#ccc,#333,#ccc);
+    background-image: -ms-linear-gradient(left,#ccc,#333,#ccc);
+    background-image: -o-linear-gradient(left,#ccc,#333,#ccc);
+    border: 0;
+    height: 1px;
+  }
+}
+#site-navigation .menu-toggle {
+  font-family: "Merriweather";
+  font-size: 100%;
+}
+@media screen and (max-width:779px) {
+  .main-navigation .menu-toggle {
+    padding: 12px 15px;
+  }
+  .main-navigation .menu-toggle:before {
+    content: "";
+    display: inline-block;
+    font: 16px/1 fontawesome;
+    -webkit-font-smoothing: antialiased;
+    margin-right: 10px;
+    vertical-align: baseline;
+  }
+  .main-navigation.toggled ul {
+    animation: show .4s linear 0s;
+  }
+  .main-navigation .menu-toggle::before {
+    transition: all .3s;
+  }
+  .main-navigation.toggled {
+    box-shadow: 0 6px 8px rgba(102,119,136,.03),0 1px 2px rgba(102,119,136,.3);
+  }
+  .main-navigation.toggled .menu-toggle::before {
+    transform: rotate(90deg);
+  }
+  .main-navigation a {
+    font-family: "Open Sans",sans-serif !important;
+    font-weight: 300;
+    padding: 12px 2.8em;
+  }
+@keyframes show {
+    0% {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  .main-navigation ol a {
+    border-top: none;
+  }
+}
+#site-label {
+  left: -24px;
+  padding: 0 24px;
+  position: relative;
+}
+@media screen and (max-width:779px) {
+  #site:checked+.main-navigation,
+  .main-navigation.toggled {
+    box-shadow: 0 6px 8px rgba(102,119,136,.03),0 1px 2px rgba(102,119,136,.3);
+  }
+  #site:checked+.main-navigation .menu-toggle::before,
+  .main-navigation.toggled .menu-toggle::before {
+    transform: rotate(90deg);
+  }
+  #site:checked+.main-navigation ul,
+  .main-navigation.toggled ul {
+    animation: show .4s linear 0s;
+    display: block;
+  }
+}
+.entry-content h2,
+.entry-content h3,
+.entry-content h4,
+.entry-content h5,
+.entry-content h6,
+.entry-header h1,
+.main-navigation .menu-toggle {
+  color: inherit;
+}
+.openblock.partintro {
+  font-weight: 400;
+  line-height: 1.75;
+  padding: 1em 0 2em;
+}
+article .entry-content p {
+  line-height: 1.75;
+}
+html:lang(ja) .h1,
+html:lang(ja) .h2,
+html:lang(ja) .h3,
+html:lang(ja) .h4,
+html:lang(ja) .h5,
+html:lang(ja) .h6,
+html:lang(ja) h1,
+html:lang(ja) h2,
+html:lang(ja) h3,
+html:lang(ja) h4,
+html:lang(ja) h5,
+html:lang(ja) h6 {
+  font-family: "游ゴシック","Yu Gothic",YuGothic,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+}
+html:lang(ja) article {
+  font-family: "游明朝体","Yu Mincho",YuMincho,"Hiragino Kaku Gothic ProN","Hiragino Kaku Gothic Pro","メイリオ",Meiryo,"ＭＳ ゴシック",sans-serif;
+}
+a {
+  color: #337ab7;
+}
+a:focus {
+  color: #1d4b8f;
+}
+#site-navigation a {
+  text-decoration: none;
+}
+#site-navigation a:hover,
+nav .breadcrumb-item a:hover {
+  color: #23527c;
+  text-decoration: underline;
+}
+nav .breadcrumb-item a {
+  padding: 0;
+  text-decoration: none;
+}
+.entry-content td {
+  vertical-align: middle;
+}
+.main-navigation {
+  border-top: none;
+}
+@media (max-width:414px) {
+  #preamble>.sectionbody>[class=paragraph]:first-of-type p {
+    text-align: center;
+  }
+  .admonitionblock>table td.icon {
+    width: 50px !important;
+  }
+  .admonitionblock>table td.content {
+    border-left: none !important;
+    padding-left: 0 !important;
+  }
+  .site {
+    padding: 0;
+  }
+  #content #toc {
+    border-radius: 0 !important;
+    border-width: 1px 0 !important;
+  }
+}
+.main-navigation .menu-toggle {
+  padding-bottom: 1em;
+  padding-top: 1em;
+}
+h1.entry-title {
+  margin: 0;
+}
+.main-navigation-wrapper {
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+  background: rgba(255,255,255,.8);
+  left: 0;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  transition: .3s;
+  width: 100vw;
+  z-index: 9999;
+}
+@media screen and (max-width:779px) {
+  .main-navigation .menu-toggle {
+    margin: 0;
+    padding-bottom: 1em;
+    padding-top: 1em;
+  }
+}
+.site-header {
+  margin-bottom: 0;
+}
+@media screen and (min-width:780px) {
+  .site-header {
+    margin-bottom: 0;
+  }
+  .main-navigation ul.menu {
+    border: 0;
+    padding: 0;
+  }
+  .main-navigation,
+  .main-navigation ol,
+  .main-navigation ul {
+    line-height: 44px !important;
+  }
+}
+article {
+  padding-top: 36px;
+}
+#content {
+  margin-top: 2.5em !important;
+}
+.main-navigation .menu li {
+  padding: 0;
+}
+.breadcrumb {
+  margin-bottom: 0;
+}
