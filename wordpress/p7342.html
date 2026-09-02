@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Snowflower Calc is a high-precision expression calculator for Mac. Designed for desktop usability, it supports up to 50 decimal places, 100-digit precision, advanced math functions, and multi-language support.">
-<title>Snowflower Calc Overview &#8211; YOSBITS</title>
+<meta name="description" content="従来の電卓操作に馴染めない方へ。Snowflower Calcは数式をそのまま1ライン入力できる現代の関数電卓です。打ち間違えも直感的に修正でき、内部100桁の高精度演算で正確な計算結果を提供します。">
+<title>Snowflower Calc 1.0 の 紹介 &#8211; YOSBITS</title>
 <meta name='robots' content='max-image-preview:large' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
@@ -22,8 +22,8 @@
 </style>
 <link rel='stylesheet' id='graphy-fonts-css' href='http://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CBitter%3A400&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
 <link rel='stylesheet' id='graphy-style-css' href='../css/silver.css' type='text/css' media='all' />
-<link rel="canonical" href="p7752.html" />
-<link rel='shortlink' href='p7752.html' />
+<link rel="canonical" href="p7342.html" />
+<link rel='shortlink' href='p7342.html' />
 		<style type="text/css">
 			.site-logo { margin-top: px; padding-bottom: px; }
 			.entry-content a, .entry-summary a, .comment-content a, .comment-respond a, .navigation a, .comment-navigation a, .current-menu-item > a { color:; }
@@ -34,7 +34,7 @@
 <link rel="stylesheet" href="../css/page.css"/>
 <link rel="icon" type="image/webp" href="../images/favicon.webp"/>
 </head>
-<body class="wp-singular page-template-default page page-id-7752 wp-theme-graphy no-sidebar footer-0 has-avatars">
+<body class="wp-singular page-template-default page page-id-7342 page-child parent-pageid-7386 wp-theme-graphy no-sidebar footer-0 has-avatars">
 <div id="page" class="hfeed">
   <header id="masthead" class="site-header" role="banner">
     <div class="main-navigation-wrapper">
@@ -42,7 +42,7 @@
       <nav id="site-navigation" class="main-navigation" role="navigation">
 <!--        <h1 class="menu-toggle">YOSBITS</h1> -->
         <div class="menu-toggle"><label for="site" id="site-label">YOSBITS</label></div>
-        <a class="skip-link screen-reader-text" href="p7752.html#content">コンテンツへスキップ</a>
+        <a class="skip-link screen-reader-text" href="p7342.html#content">コンテンツへスキップ</a>
         <div class="menu-%e3%83%88%e3%83%83%e3%83%97%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container"><ul id="menu-%e3%83%88%e3%83%83%e3%83%97%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu"><li id="menu-item-4755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-4755"><a href="index.html">YOSBITS</a></li>
 <li id="menu-item-1053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1053"><a href="p987.html">アプリケーション</a></li>
 
@@ -60,101 +60,122 @@
 
 			
 				
-<article id="post-7752" class="post-7752 page type-page status-publish hentry">
+<article id="post-7342" class="post-7342 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Snowflower Calc Overview</h1>
+		<h1 class="entry-title">Snowflower Calc 1.0 の 紹介</h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<style>
-/*
-* "Merriweather" licensed under the SIL Open Font License
-*  http://www.google.com/fonts/specimen/Merriweather
-*/
-@font-face {
-    font-family: "Merriweather";
-    font-style: normal;
-    font-weight: 300;
-    src: local("Merriweather Light"), local("Merriweather-Light"), url("http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff") format("woff");
+		<link href="../css/asciidoctor.css" rel="stylesheet" type="text/css"/>
+<link href="../css/asciidoc-yos.css" rel="stylesheet" type="text/css"/>
+<style>
+#masthead, #colophon{
+ width: 100vw;
+ max-width: 100vw;
+ position: relative;
+ left: 50%;
+ right: 50%;
+ margin-left: -50vw;
+ margin-right: -50vw;
 }
-#content h1,
-#content h2, #content li{
-  font-family : "Merriweather";
+body{background-color:#f3f4f5}
+h1{margin-top:0}
+.site-header {margin-bottom:0}
+#page {
+/*    background-color: black;*/
 }
 article {
     margin: auto;
-    max-width: 35em;
+    max-width: 40em;
+    padding-top: 12px;
 }
-p{text-align: justify;}
-#content h1{
-  font-size: 24pt;
+.admonitionblock .content,
+.openblock.partintro{
+    text-align: justify;
 }
+.entry-header .entry-title {
+    font-size: 1.4em;
+}
+.imageblock img{
+    max-width: 100% !important;
+}
+svg{
+    max-width: 100% !important;
+}
+#preamble>.sectionbody>[class="paragraph"]:first-of-type p {font-size: 2.56em;text-align: center;}
 .entry-title::before{
   content: ' ';
   background-image: url("../images/snowflower-calc.png");
   display: inline-block !important;
-  height: 38px;
-  width: 38px;
+  height: 34px;
+  width: 34px;
   background-size: contain;
   vertical-align: middle;
   margin-right: 0.5em;
-  transform: translateY(-3px);
+}
+.fadeInBottom {
+  animation-name: fadeInBottom;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInBottom {
+  from { opacity: 0.5; transform: translateY(10%)}
+  to { opacity: 1; transform: translateY(0)}
 }
 </style>
-<link href="../css/asciidoctor.css" rel="stylesheet" type="text/css"/>
-<link href="../css/asciidoc-yos.css" rel="stylesheet" type="text/css"/>
-  <div class="row">
-   <div class="columns justify large-10 large-centered medium-12 small-12">
-    <div id="content"> 
-     <div id="preamble"> 
-      <div class="sectionbody"> 
-       <div class="paragraph"> 
-        <p>Snowflower Calc is a high-precision calculator of the formula input type. In particular, we are pursuing ease of use in the current PC environment.</p> 
-       </div> 
-       <div class="ulist"> 
-        <ul> 
-         <li> <p>The display is a maximum of 50 decimal places, and the number of significant digits during calculation is 100 decimal digits.</p> </li> 
-         <li> <p>Functions that support many functions and are not located on the virtual keypad can be used by directly entering them on the keyboard.A list of functions available in Snowflower Calc can be found in the <a href="p4628.html">user guide</a>.</p> </li> 
-        </ul> 
-       </div> 
-      </div> 
-     </div> 
-     <div class="sect1"> 
-      <h2 id="_Languages">Languages</h2> 
-      <div class="sectionbody"> 
-       <div class="ulist"> 
-        <ul> 
-         <li> <p>Deutsch</p> </li> 
-         <li> <p>Español</p> </li> 
-         <li> <p>English</p> </li> 
-         <li> <p>Français</p> </li> 
-         <li> <p>Italiano</p> </li> 
-         <li> <p>日本語</p> </li> 
-         <li> <p>简体中文</p> </li> 
-         <li> <p>繁體中文</p> </li> 
-         <li> <p>한글</p> </li> 
-        </ul> 
-       </div> 
-      </div> 
-     </div> 
-     <div class="sect1"> 
-      <h2 id="_related document">Related document</h2> 
-      <div class="sectionbody"> 
-       <div class="ulist"> 
-        <ul> 
-         <li> <p><a href="p4628.html">Snowflower Calc User Guide</a></p> </li> 
-		 <li> <p><a href="p7343.html">Snowflower Calc Release Information</a></p> </li> 
-        </ul> 
-       </div> 
-      </div> 
-     </div> 
-    </div> 
-   </div>
-  </div>
-<div style="text-align:center;padding-top:2em">
-<a href="https://apps.apple.com/us/app/snowflower-calc/id1077790686?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img decoding="async" src="../images/appstore_en.svg" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;margin-top:0"></a>
-</div>
-			</div><!-- .entry-content -->
+<div class="row"><div class="columns justify large-10 large-centered medium-12 small-12"><div id="content"><div id="preamble"><div class="sectionbody"><div class="paragraph"><p>従来の電卓に馴染めないのは、あなたのせいではありません</p></div><div class="paragraph"><p>昔の電卓UIは、液晶やメモリーの性能が極めて低かった時代の遺物であり、使いにくさを感じるのは当然のことです。Snowflower Calcは、その「過去の作法」を現代のテクノロジーで正しく直した計算機です。人間の思考に合わせた使いやすさと、専門的な計算にも耐えうる内部100桁の精度を両立しました。</p></div><div class="paragraph"><p><span class="image"><img decoding="async" src="./images/snowflower-calc-ss01.png" alt="snowflower calc" class="full-width fadeInBottom"></span></p></div><div class="paragraph"><p><style>
+.learn-more{text-align:center}
+.learn-more a{text-decoration: none; font-size:1.2em;}
+.learn-more a:hover{text-decoration: underline;}
+.learn-more a::after{ content: "\f105" !important; font-family:"fontawesome"; padding-left:0.5em}
+.full-width_ {
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: black;
+  object-fit: cover;
+}
+</style></p></div><div class="paragraph"><p>
+	
+	
+	<section>
+	<h2>なぜ、従来の電卓は使いにくいのか？</h2>
+	<div class="paragraph"><p>半世紀前のハードウェア制限から生まれた素朴なデザインは、人間側に無理な作業を強いています。</p></div>
+	<ul>
+		<li><code>1+2*3</code> を入力するために <code>2*3+1</code> と頭の中で順序を組み替える必要がある</li>
+		<li>一度押し間違えると、最初から全て打ち直しになる</li>
+		<li><code>M+</code> や <code>MR</code> といった、特殊な操作手順（ボタン入力の決まり事）を覚える必要がある</li>
+	</ul>
+	</section>
+	<section>
+	<h2>人間の思考を止めない「新しいUI」</h2>
+	<div class="paragraph"><p>PCやスマートフォンが持つ十分なパワーを前提に設計し、これまでの不便を一新しました。</p></div>
+	<ul>
+	<li><strong>数式をそのまま入力：</strong> <p>紙に書くように1ラインでそのまま数式を入力可能。頭の中で並び替える必要はありません。</p></li>
+	<li><strong>いつでも見直し・即修正：</strong> <p>入力途中の式が画面に見えているため、打ち間違えてもミスした箇所だけをピンポイントで修正できます。作業の中断も再開もスムーズです。</p></li>
+	<li><strong>高機能なのにシンプル：</strong> <p>使いにくいメモリー機能を排除し、画面操作とキーボード入力の良いとこ取りで直感的な使いやすさを実現しました。</p></li>
+	</ul>
+	</section>
+	<section>
+	<h2>妥協のない「内部100桁」の計算精度</h2>
+	<div class="paragraph"><p>PCのリソースをフル活用し、圧倒的な計算力を備えています。</p></div>
+	<ul>
+	<li><strong>100桁演算が生む安心感：</strong><p>たかだか10〜15桁程度しか出せない従来の電卓と異なり、内部100進数100桁（表示最大50桁）で処理。桁あふれや丸め誤差を気にせず計算できます。</li>
+	<li><strong>厳密な関数テストを合格：</strong><p><code>asin(acos(atan(tan(cos(sin(29))))))</code> の答えは正確に<code>「29」</code>。精度不足に悩まされることなく、真に正しい結果を導き出します。</li>
+	</ul>
+	</section>
+	<section>
+	<h2>人間が電卓に合わせる時代から、電卓が人間に寄り添う時代へ</h2>
+	<div class="paragraph"><p>特殊な打ち方のルールを覚えて一打ずつ入力する時代は終わりました。電卓が人間の思考に寄り添う、Snowflower Calcでストレスのない圧倒的に快適な計算体験を始めてください。</p></div>
+	</section>
+	</p></div><div class="paragraph learn-more"><p><a href="p4624.html">さらに詳しく</a></p></div></div></div></div></div></div>
+<div style="text-align:center;padding-top:1em"> 
+<a href="https://apps.apple.com/us/app/snowflower-cakc/id1077790686?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img decoding="async" src="../images/appstore_ja.svg" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;margin-top:0"></a>
+</div>			</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
 				
