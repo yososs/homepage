@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Snowflower Apps リリース情報 &#8211; YOSBITS</title>
+<meta name="description" content="Snowflower Diffは、比較とマージを素早く滑らかに行うツールです。フォルダ、テキスト、画像、オフィス文書まで対応。独自の2次元比較によりMarkdownの表差分も軽快に可視化し、確認作業の精神的疲労を軽減します。">
+<title>Snowflower Diff 2.0 の紹介 &#8211; YOSBITS</title>
 <meta name='robots' content='max-image-preview:large' />
 	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
 	<link rel='dns-prefetch' href='https://fonts.googleapis.com/' />
@@ -21,8 +22,8 @@
 </style>
 <link rel='stylesheet' id='graphy-fonts-css' href='https://fonts.googleapis.com/css?family=Lora%3A400%2C400italic%2C700%2C700italic%7CBitter%3A400&amp;subset=latin%2Clatin-ext' type='text/css' media='all' />
 <link rel='stylesheet' id='graphy-style-css' href='../css/silver.css' type='text/css' media='all' />
-<link rel="canonical" href="p7386.html" />
-<link rel='shortlink' href='p7386.html' />
+<link rel="canonical" href="p7344.html" />
+<link rel='shortlink' href='p7344.html' />
 		<style type="text/css">
 			.site-logo { margin-top: px; padding-bottom: px; }
 			.entry-content a, .entry-summary a, .comment-content a, .comment-respond a, .navigation a, .comment-navigation a, .current-menu-item > a { color:; }
@@ -33,14 +34,14 @@
 <link rel="stylesheet" href="../css/page.css"/>
 <link rel="icon" type="image/webp" href="../images/favicon.webp"/>
 </head>
-<body class="wp-singular page-template-default page page-id-7386 page-parent wp-theme-graphy no-sidebar footer-0 has-avatars">
+<body class="wp-singular page-template-default page page-id-7344 page-child parent-pageid-7386 wp-theme-graphy no-sidebar footer-0 has-avatars">
 <div id="page" class="hfeed">
   <header id="masthead" class="site-header" role="banner">
     <div class="main-navigation-wrapper">
       <input type="checkbox" name="site" id="site" style="visibility: collapse; display:none">
       <nav id="site-navigation" class="main-navigation" role="navigation">
         <div class="menu-toggle"><label for="site" id="site-label">YOSBITS</label></div>
-        <a class="skip-link screen-reader-text" href="p7386.html#content">コンテンツへスキップ</a>
+        <a class="skip-link screen-reader-text" href="p7344.html#content">コンテンツへスキップ</a>
         <div class="menu-%e3%83%88%e3%83%83%e3%83%97%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc-container"><ul id="menu-%e3%83%88%e3%83%83%e3%83%97%e3%83%a1%e3%83%8b%e3%83%a5%e3%83%bc" class="menu"><li id="menu-item-4755" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-home menu-item-4755"><a href="index.html">YOSBITS</a></li>
 <li id="menu-item-1053" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-1053"><a href="p987.html">アプリケーション</a></li>
 
@@ -55,78 +56,90 @@
   <div id="content" class="site-content">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
-
-			
-				
-<article id="post-7386" class="post-7386 page type-page status-publish hentry">
+<article id="post-7344" class="post-7344 page type-page status-publish hentry">
 	<header class="entry-header">
-		<h1 class="entry-title">Snowflower Apps リリース情報</h1>
+		<h1 class="entry-title">Snowflower Diff 2.0 の紹介</h1>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<style>
-/*
-* "Merriweather" licensed under the SIL Open Font License
-*  http://www.google.com/fonts/specimen/Merriweather
-*/
-@font-face {
-    font-family: "Merriweather";
-    font-style: normal;
-    font-weight: 300;
-    src: local("Merriweather Light"), local("Merriweather-Light"), url("http://fonts.gstatic.com/s/merriweather/v8/ZvcMqxEwPfh2qDWBPxn6nmFp2sMiApZm5Dx7NpSTOZk.woff") format("woff");
+		<link href="../css/asciidoctor.css" rel="stylesheet" type="text/css"/>
+<link href="../css/asciidoc-yos.css" rel="stylesheet" type="text/css"/>
+<style>
+#masthead, #colophon{
+ width: 100vw;
+ max-width: 100vw;
+ position: relative;
+ left: 50%;
+ right: 50%;
+ margin-left: -50vw;
+ margin-right: -50vw;
 }
-#content h1, #content h2, #content h3[lang="en"], #content li{
-  font-family : "Merriweather";
-}
-#content th, #content td{
-  border-bottom: none;
+body{background-color:#f3f4f5}
+h1{margin-top:0}
+.site-header {margin-bottom:0}
+#page {
+/*    background-color: black;*/
 }
 article {
     margin: auto;
-    max-width: 45em;
+    max-width: 40em;
+    padding-top: 12px;
 }
-@media screen and (min-width: 670px){
-  .menu-ul{column-count: 2;}
+.admonitionblock .content,
+.openblock.partintro{
+    text-align: justify;
 }
-@media screen and (min-width: 1024px){
-  .menu-ul{column-count: 3;}
-  h3.docs-heading{break-before:column};
+.entry-header .entry-title {
+    font-size: 1.4em;
 }
-li{list-style:none;}
-.docs-heading {
-    border-bottom: 1px solid #eee;
+.imageblock img{
+    max-width: 100% !important;
 }
-.entry-content .btn-default.active{
-    box-shadow: none;
+svg{
+    max-width: 100% !important;
 }
-h3.docs-heading{font-size:1.6875em;word-spacing:-.05em;margin-top:0em;margin-bottom:0em;}
-.btn-group {
-     border: thin solid white;
-     border-radius: 4px;
- }
- .btn-group .btn {
-     border: none;
- }
- .btn-group a.btn:hover {
-     text-decoration: none;
- }
+#preamble>.sectionbody>[class="paragraph"]:first-of-type p {font-size: 2.56em;text-align: center;}
+.entry-title::before{
+  content: ' ';
+  background-image: url("../images/snowflower-diff.png");
+  display: inline-block !important;
+  height: 34px;
+  width: 34px;
+  background-size: contain;
+  vertical-align: middle;
+  margin-right: 0.5em;
+}
+.fadeInBottom {
+  animation-name: fadeInBottom;
+  animation-duration: 0.7s;
+  animation-fill-mode: both;
+}
+@keyframes fadeInBottom {
+  from { opacity: 0.5; transform: translateY(10%)}
+  to { opacity: 1; transform: translateY(0)}
+}
 </style>
-<link href="../css/asciidoctor.css" rel="stylesheet" type="text/css"/>
-<link href="../css/asciidoc-yos.css" rel="stylesheet" type="text/css"/>
-<div style="text-align:center;padding-bottom: 2em;">
-<div class="btn-group" role="group" aria-label="..."><a href="p7666.html" class="btn btn-default">EN</a><a href="p7386.html" class="btn btn-default active">JA</a></div>
+<div class="row"><div class="columns justify large-10 large-centered medium-12 small-12"><div id="content"><div id="preamble"><div class="sectionbody"><div class="paragraph"><p>情熱に、静かな確信を。変化を可視化する。</p></div><div class="paragraph"><p>どれほど情熱を傾けた仕事であっても、後から冷静に見つめ直すことで初めて気づく間違いがあります。些細な見落としで積み重ねを台無しにしないためには、変化を正しく捉え続けることが欠かせません。しかし、果てしない確認作業は集中力を削ぎ、思考を鈍らせてしまいます。</p></div><div class="paragraph"><p>Snowflower Diff は、比較とマージを素早く滑らかに行うためのツールです。画面構成を極限までシンプルに保ちながら、フォルダ、テキスト、画像、オフィス文書まで幅広く対応。行と文字を同時に解析する「2次元比較」により、Markdownなどの複雑な表の変更点も、驚くほど軽快なレスポンスで一目で見つけ出せます。</p></div><div class="paragraph"><p><span class="image"><img decoding="async" src="./images/snowflower-diff-ss01.png" alt="snowflower diff" class="full-width fadeInBottom"></span></p></div><div class="paragraph"><p>確認作業に伴う精神的な疲労を軽減し、自動で素早く違いを可視化する。3年以上の研究開発から生まれたこの操作性があるからこそ、妥協することなくあなたの創作のクオリティを高め続けることができます。</p></div><div class="paragraph"><p>洗練された比較環境をワークフローに取り入れ、より確かなものづくりを実現してください。</p></div><div class="paragraph"><p>“Think different”</p></div><div class="paragraph learn-more"><p><a href="http://www.yosbits.com/wordpress/p8433.html">さらに詳しく</a></p></div><div class="paragraph"><p><style>
+.learn-more{text-align:center}
+.learn-more a{text-decoration: none; font-size:1.2em;}
+.learn-more a:hover{text-decoration: underline;}
+.learn-more a::after{ content: "\f105" !important; font-family:"fontawesome"; padding-left:0.5em}
+.full-width {
+  width: 100vw;
+  max-width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  background-color: black;
+  object-fit: cover;
+}
+</style></p></div></div></div></div></div></div>
+<div style="text-align:center;padding-top:1em"> 
+<a href="https://apps.apple.com/us/app/snowflower-diff/id1540638294?mt=12&amp;itsct=apps_box_badge&amp;itscg=30200" style="display: inline-block; overflow: hidden; border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;"><img decoding="async" src="../images/appstore_ja.svg" alt="Download on the Mac App Store" style="border-top-left-radius: 13px; border-top-right-radius: 13px; border-bottom-right-radius: 13px; border-bottom-left-radius: 13px; width: 250px; height: 83px;margin-top:0"></a>
 </div>
-
-<ul>
-<li><h2><a href="p7464.html">Snow Flower Text 4.0 リリース紹介</a></h2></li>
-<li><h2><a href="p7462.html">Snow Flower Text 2.1 リリース紹介</a></h2></li>
-<li><h2><a href="p7341.html">Snow Flower Text 1.7 リリース紹介</a></h2></li>
-<li><h2><a href="p7461.html">Snow Flower Text 1.1 リリース紹介</a></h2></li>
-<li><h2><a href="p7344.html">Snowflower Diff 2.0 リリース紹介</a></h2></li>
-<li><h2><a href="p7436.html">Snowflower Pass 1.0 リリース紹介</a></h2></li>
-<li><h2><a href="p7342.html">Snowflower Calc 1.0 リリース紹介</a></h2></li>
-</ul>
-			</div><!-- .entry-content -->
+</div><!-- .entry-content -->
 </article><!-- #post-## -->
 
 				
